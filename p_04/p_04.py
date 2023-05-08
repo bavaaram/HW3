@@ -30,4 +30,6 @@ print(f"{delta2} days and {delta3} minutes remaining to your next birthday.")
 print("\n************************************************\n")
 
 
-
+# Converting birth date to Jalali format
+jalali = jdatetime.date.fromgregorian(day=day, month=month, year=year)
+print(f"Your Birthdate in Jalali format is {str(jalali)}")
