@@ -22,11 +22,11 @@ print("\n************************************************\n")
 # Minutes and days remaining to next birthday
 if (month <= now.month) and (day > now.day):
     delta = datetime(now.year, org.month, org.day) - now
-    delta2, delta3 = delta.days + 1, delta.total_seconds() / 60
+    d_days, d_mins = delta.days + 1, delta.total_seconds() / 60
 else:
     delta = datetime(now.year + 1, org.month, org.day) - now
-    delta2, delta3 = delta.days + 1, delta.total_seconds() / 60
-print(f"{delta2} days and {delta3} minutes remaining to your next birthday.")
+    d_days, d_mins = delta.days + 1, delta.total_seconds() / 60
+print(f"{d_days} days and {d_mins} minutes remaining to your next birthday.")
 print("\n************************************************\n")
 
 
