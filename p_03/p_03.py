@@ -6,9 +6,7 @@ def apply_discount(price: int, discount: float = 0.0) -> int:
     """
     final_price = int(price * (1 - discount))
 
-    assert (
-      0 < final_price <= price, "A Assertion Error Raised"
-    )
+    assert 0 < final_price <= price, "The discount rate is not valid!"
     return final_price
 
 
