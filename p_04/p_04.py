@@ -1,7 +1,11 @@
 #! /usr/bin/python3
 
-import datetime as datee
+from datetime import datetime
 import jdatetime
 
-date = input("Please Enter your Birth date: ")
-print(jdatetime.datetime.now())
+
+# Taking Inputs from User
+year, month, day = input("Please Enter your Birth date\
+in format yyyy/mm/dd: ").split("/")
+year, month, day = int(year), int(month), int(day)
+print("\n************************************************\n")
