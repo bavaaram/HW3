@@ -9,6 +9,9 @@ correctly. The general format of the Assert keyword is as follows:
 assert <Condition>, "If this condition is equal to False,This massage will be
 appear as an Eror :)"
 
+essert is a keyword and not a function. We are actually passing in a tuple as the first
+argument and leaving off thesecond argument.
+a non-empty tuple evaluates to True ans since the assertion massage is optional, we have essentially called "assert True" when we wrote "assert (a expression)"
 Using the Linux man python command and reading the options section, the following
 explanations are given for the -O option:
 
