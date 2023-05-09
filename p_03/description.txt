@@ -1,11 +1,25 @@
-By adding the corresponding code to the vim editor, a warning is received that apparently the parentheses in front of Assert cause the value in front of it to always be True. For this reason, the parentheses have been removed and it can be seen that the code works correctly in normal mode (when we run the code normally and enter a value greater than 1 for the discount rate, an AssertionError is raised because the condition before We have asserted, in this case it is equal to False and the final price is less than zero!)
-In general, I think it is good to use Assert for data validation. But it must be used correctly. The general format of the Assert keyword is as follows:
-assert <Condition>, "If this condition is equal to False, This massage will be appear as an Eror :)"
+By adding the corresponding code to the vim editor, a warning is received that apparently
+the parentheses in front of Assert cause the value in front of it to always be True.
+For this reason, the parentheses have been removed and it can be seen that the code works
+correctly in normal mode (when we run the code normally and enter a value greater than
+1 for the discount rate, an AssertionError is raised because the condition before We
+have asserted, in this case it is equal to False and the final price is less than zero!)
+In general, I think it is good to use Assert for data validation. But it must be used
+correctly. The general format of the Assert keyword is as follows:
+assert <Condition>, "If this condition is equal to False,This massage will be
+appear as an Eror :)"
 
-Using the Linux man python command and reading the options section, the following explanations are given for the -O option:
+Using the Linux man python command and reading the options section, the following
+explanations are given for the -O option:
 
--O     Remove assert statements and any code conditional on the value of  __debug__;  aug‐
-       ment  the  filename  for compiled (bytecode) files by adding .opt-1 before the pyc extension.
+-O     Remove assert statements and any code conditional on the value of  __debug__;
+aug‐ment the filename for compiled (bytecode) files by adding .opt-1 before the pyc
+extension.
 
 
-As it is known, the -O option causes any Assertion and conditions that we have considered for our code to be ignored. So in this case the assert statement will not work. For this reason, in order to solve this problem, we use conditional if statements and put the corresponding code in the p_03_new.py file. In this way, even if we use the -O option when running the script, there will be no problem.
+As it is known, the -O option causes any Assertion and conditions that we have considered
+for our code to be ignored. So in this case the assert statement will not work. For this
+reason, in order to solve this problem, we use conditional if statements and put the
+corresponding code in the p_03_new.py file. In this way, even if we use the -O option when
+running the script, there will be no problem.
+
