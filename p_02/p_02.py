@@ -32,7 +32,7 @@ def div_lbyl(n_1, n_2):
 
 stat = input("Please select style eafp/lbyl   ")
 if stat not in ("eafp", "lbyl"):
-    print("unknown stat, please try again/")
+    print("unknown stat, please try again")
 num1, num2 = input().split()
 if stat == "eafp":
     div_eafp(num1, num2)
